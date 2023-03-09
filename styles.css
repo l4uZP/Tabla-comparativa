@@ -1,0 +1,76 @@
+body {
+    background-color: #deb887;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #66553E;
+    font-weight: 700;
+    padding: 5px;
+}
+
+p {
+    color: #66553E;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.table-card {
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-shadow: 3px 3px 10px 6px #b3946d;
+}
+
+.table-container {
+    max-width: 900px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.table-container::-webkit-scrollbar-thumb {
+    background: #66553E;
+    border-radius: 4px;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #7582E6;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #66553E;
+    width: fit-content;
+    font-size: 15px;
+}
+
+.column {   
+    width: 300px;
+    min-width: 300px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.sticky-column {
+    background-color: white;
+    border-right: 1px solid #66553E;
+    position: sticky;
+    left: 0;
+    text-align: left;
+}
