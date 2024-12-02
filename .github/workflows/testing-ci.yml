@@ -25,11 +25,11 @@ jobs:
             msystem: MINGW64
             update: true
             path-type: inherit
-            install: make git
+            install: make
         - name: update msys2
           run: pacman --noconfirm --needed -Syuu
           continue-on-error: true
-        - name: update msys2
+        - name: update msys2 again
           run: pacman --noconfirm --needed -Syuu
           continue-on-error: true
         - name: install dependencies
@@ -40,4 +40,4 @@ jobs:
             mingw-w64-x86_64-gtk3 
             mingw-w64-x86_64-glib2 
         - name: run stuff
-          run: go version
+          run: make test
