@@ -9,6 +9,9 @@ jobs:
       run:
         shell: msys2 {0}
     
+    strategy:
+        fail-fast: false
+
     name: Test go-1.19 (Windows)
     steps:
         - name: checkout
